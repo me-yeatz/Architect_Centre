@@ -1,0 +1,31 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="#3A2C39"/>
+  
+  <!-- Architectural grid pattern -->
+  <g opacity="0.2">
+    <line x1="128" y1="128" x2="384" y2="128" stroke="#F2D9EE" stroke-width="4"/>
+    <line x1="128" y1="256" x2="384" y2="256" stroke="#F2D9EE" stroke-width="4"/>
+    <line x1="128" y1="384" x2="384" y2="384" stroke="#F2D9EE" stroke-width="4"/>
+    <line x1="128" y1="128" x2="128" y2="384" stroke="#F2D9EE" stroke-width="4"/>
+    <line x1="256" y1="128" x2="256" y2="384" stroke="#F2D9EE" stroke-width="4"/>
+    <line x1="384" y1="128" x2="384" y2="384" stroke="#F2D9EE" stroke-width="4"/>
+  </g>
+  
+  <!-- Main "A" letter (Architect) -->
+  <path d="M256 180 L200 340 L240 340 L260 280 L252 280 L272 340 L312 340 L256 180 Z" fill="#F2D9EE"/>
+  <path d="M256 200 L280 300 L232 300 Z" fill="#3A2C39"/>
+  
+  <!-- AI Sparkle icon -->
+  <circle cx="320" cy="200" r="24" fill="#98869E"/>
+  <path d="M320 180 L320 220 M310 200 L330 200" stroke="#F2D9EE" stroke-width="3" stroke-linecap="round"/>
+  <path d="M315 185 L325 215 M325 185 L315 215" stroke="#F2D9EE" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Small architectural elements -->
+  <rect x="180" y="360" width="40" height="32" rx="4" fill="#98869E"/>
+  <rect x="292" y="360" width="40" height="32" rx="4" fill="#98869E"/>
+  
+  <!-- Corner accent -->
+  <circle cx="120" cy="120" r="16" fill="#F2D9EE" opacity="0.5"/>
+  <circle cx="392" cy="120" r="16" fill="#F2D9EE" opacity="0.5"/>
+</svg>

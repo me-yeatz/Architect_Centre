@@ -1,12 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/app",
-      "destination": "/app/"
+      "source": "/app/(.*)",
+      "destination": "/dist-app/$1"
     },
     {
-      "source": "/app/(.*)",
-      "destination": "/app/$1"
+      "source": "/app",
+      "destination": "/dist-app/index.html"
     }
   ],
   "headers": [
