@@ -1,0 +1,22 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" fill="#FFFFFF" rx="24"/>
+  <rect x="24" y="24" width="144" height="144" fill="#F2D9EE" rx="18"/>
+  
+  <!-- Main workflow nodes -->
+  <circle cx="48" cy="96" r="15" fill="#3A2C39"/>
+  <circle cx="96" cy="60" r="15" fill="#3A2C39"/>
+  <circle cx="96" cy="132" r="15" fill="#3A2C39"/>
+  <circle cx="144" cy="96" r="15" fill="#3A2C39"/>
+  
+  <!-- Connection lines -->
+  <line x1="63" y1="96" x2="81" y2="67" stroke="#3A2C39" stroke-width="3"/>
+  <line x1="63" y1="96" x2="81" y2="125" stroke="#3A2C39" stroke-width="3"/>
+  <line x1="111" y1="67" x2="129" y2="89" stroke="#3A2C39" stroke-width="3"/>
+  <line x1="111" y1="125" x2="129" y2="103" stroke="#3A2C39" stroke-width="3"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="48" cy="48" r="6" fill="#98869E"/>
+  <circle cx="144" cy="48" r="6" fill="#98869E"/>
+  <circle cx="48" cy="144" r="6" fill="#98869E"/>
+  <circle cx="144" cy="144" r="6" fill="#98869E"/>
+</svg>
