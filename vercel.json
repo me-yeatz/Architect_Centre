@@ -1,0 +1,23 @@
+{
+  "rewrites": [
+    {
+      "source": "/app",
+      "destination": "/app/"
+    },
+    {
+      "source": "/app/(.*)",
+      "destination": "/app/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    }
+  ]
+}
