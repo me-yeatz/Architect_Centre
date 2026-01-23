@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Architect Centre - User Manual</title>
+    
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-paper">
+    <!-- Header -->
+    <header class="h-20 border-b-[3px] border-dark-purple flex items-center justify-between px-6 md:px-12 bg-paper">
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="text-xl md:text-2xl font-display font-extrabold uppercase tracking-tight text-dark-purple">
+                AI ARCHITECT <span class="text-misty-orchid">CENTRE</span>
+            </a>
+        </div>
+        
+        <nav class="hidden md:flex gap-6">
+            <a href="index.html" class="text-dark-purple font-bold hover:text-misty-orchid transition-colors">Home</a>
+            <a href="#getting-started" class="text-dark-purple font-bold hover:text-misty-orchid transition-colors">Getting Started</a>
+            <a href="#workflows" class="text-dark-purple font-bold hover:text-misty-orchid transition-colors">Workflows</a>
+            <a href="#ai-integration" class="text-dark-purple font-bold hover:text-misty-orchid transition-colors">AI Integration</a>
+            <a href="#troubleshooting" class="text-dark-purple font-bold hover:text-misty-orchid transition-colors">Troubleshooting</a>
+        </nav>
+        
+        <a href="../app" class="btn-primary px-4 py-2 rounded-xl font-bold hover:bg-misty-orchid transition-colors shadow-cartoon">
+            Launch App
+        </a>
+    </header>
+
+    <!-- Manual Content -->
+    <main class="py-12 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12 text-center">
+                <h1 class="text-4xl md:text-5xl font-display font-black text-dark-purple mb-4">
+                    User <span class="text-misty-orchid">Manual</span>
+                </h1>
+                <p class="text-xl text-dark-purple/80 max-w-3xl mx-auto">
+                    Complete guide to using AI Architect Centre for workflow automation
+                </p>
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="bg-pale-purple border-[3px] border-dark-purple rounded-3xl p-8 mb-12 shadow-cartoon">
+                <h2 class="font-display font-bold text-2xl text-dark-purple mb-6">Table of Contents</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="#getting-started" class="block p-4 bg-white border-[3px] border-dark-purple rounded-xl hover:bg-misty-orchid/20 transition-colors shadow-cartoon-sm">
+                        <h3 class="font-bold text-lg text-dark-purple">1. Getting Started</h3>
+                        <p class="text-dark-purple/70 text-sm">Installation and setup</p>
+                    </a>
+                    <a href="#workflows" class="block p-4 bg-white border-[3px] border-dark-purple rounded-xl hover:bg-misty-orchid/20 transition-colors shadow-cartoon-sm">
+                        <h3 class="font-bold text-lg text-dark-purple">2. Creating Workflows</h3>
+                        <p class="text-dark-purple/70 text-sm">Building automation flows</p>
+                    </a>
+                    <a href="#ai-integration" class="block p-4 bg-white border-[3px] border-dark-purple rounded-xl hover:bg-misty-orchid/20 transition-colors shadow-cartoon-sm">
+                        <h3 class="font-bold text-lg text-dark-purple">3. AI Integration</h3>
+                        <p class="text-dark-purple/70 text-sm">Using AI for content generation</p>
+                    </a>
+                    <a href="#troubleshooting" class="block p-4 bg-white border-[3px] border-dark-purple rounded-xl hover:bg-misty-orchid/20 transition-colors shadow-cartoon-sm">
+                        <h3 class="font-bold text-lg text-dark-purple">4. Troubleshooting</h3>
+                        <p class="text-dark-purple/70 text-sm">Common issues and solutions</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Getting Started Section -->
+            <section id="getting-started" class="mb-16 scroll-mt-24">
+                <h2 class="font-display font-bold text-3xl text-dark-purple mb-6 pb-2 border-b-2 border-dark-purple">Getting Started</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">System Requirements</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-dark-purple/80">
+                            <li>Modern web browser (Chrome, Firefox, Safari, Edge)</li>
+                            <li>Internet connection for AI services</li>
+                            <li>At least 4GB RAM recommended</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Installation</h3>
+                        <ol class="list-decimal pl-6 space-y-3 text-dark-purple/80">
+                            <li>Clone the repository: <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">git clone https://github.com/me-yeatz/Architect_Centre.git</code></li>
+                            <li>Navigate to the project directory: <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">cd Architect_Centre</code></li>
+                            <li>Install dependencies: <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">npm install</code></li>
+                            <li>Create a <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">.env.local</code> file and add your Gemini API key: <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">GEMINI_API_KEY=your_api_key_here</code></li>
+                            <li>Start the application: <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">npm run dev</code></li>
+                            <li>Visit <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">http://localhost:3000</code> in your browser</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Initial Setup</h3>
+                        <p class="text-dark-purple/80 mb-4">When you first launch the application, you'll see the default workflow. To customize it:</p>
+                        <ol class="list-decimal pl-6 space-y-2 text-dark-purple/80">
+                            <li>Open the <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">constants.ts</code> file</li>
+                            <li>Modify the <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">INITIAL_NODES</code>, <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">INITIAL_EDGES</code>, and <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">MOCK_CONTRACT</code> to match your workflow</li>
+                            <li>Update the <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">geminiService.ts</code> file to customize AI prompts for your specific use case</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workflows Section -->
+            <section id="workflows" class="mb-16 scroll-mt-24">
+                <h2 class="font-display font-bold text-3xl text-dark-purple mb-6 pb-2 border-b-2 border-dark-purple">Creating Workflows</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Understanding Node Types</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Trigger Nodes</h4>
+                                <p class="text-dark-purple/80 mb-3">Initiate workflow execution. Common triggers include:</p>
+                                <ul class="list-disc pl-5 space-y-1 text-dark-purple/80">
+                                    <li>New project creation</li>
+                                    <li>Milestone completion</li>
+                                    <li>File upload</li>
+                                    <li>Scheduled time</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Action Nodes</h4>
+                                <p class="text-dark-purple/80 mb-3">Perform operations like:</p>
+                                <ul class="list-disc pl-5 space-y-1 text-dark-purple/80">
+                                    <li>AI content generation</li>
+                                    <li>Data processing</li>
+                                    <li>File manipulation</li>
+                                    <li>API calls</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Condition Nodes</h4>
+                                <p class="text-dark-purple/80 mb-3">Make decisions based on data:</p>
+                                <ul class="list-disc pl-5 space-y-1 text-dark-purple/80">
+                                    <li>Check data values</li>
+                                    <li>Evaluate conditions</li>
+                                    <li>Route workflow differently</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Response Nodes</h4>
+                                <p class="text-dark-purple/80 mb-3">Output results:</p>
+                                <ul class="list-disc pl-5 space-y-1 text-dark-purple/80">
+                                    <li>Send notifications</li>
+                                    <li>Save to storage</li>
+                                    <li>Send messages</li>
+                                    <li>Update records</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Building Your First Workflow</h3>
+                        <ol class="list-decimal pl-6 space-y-4 text-dark-purple/80">
+                            <li>
+                                <strong>Add a Trigger:</strong> Click on the canvas to place a trigger node. This will be the starting point of your workflow.
+                            </li>
+                            <li>
+                                <strong>Add Actions:</strong> Place action nodes to perform tasks. You can add multiple actions that run in sequence or in parallel.
+                            </li>
+                            <li>
+                                <strong>Connect Nodes:</strong> Click and drag from the right port of one node to the left port of another to create connections.
+                            </li>
+                            <li>
+                                <strong>Configure Nodes:</strong> Double-click on nodes to configure their settings and parameters.
+                            </li>
+                            <li>
+                                <strong>Test Your Workflow:</strong> Use the "Run" button to execute your workflow and see the results.
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Advanced Workflow Techniques</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Parallel Processing</h4>
+                                <p class="text-dark-purple/80">Connect one trigger to multiple action nodes to run tasks in parallel. This speeds up execution when tasks don't depend on each other.</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Conditional Logic</h4>
+                                <p class="text-dark-purple/80">Use condition nodes to create branching workflows. Based on certain criteria, your workflow can take different paths.</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Looping Workflows</h4>
+                                <p class="text-dark-purple/80">Create loops by connecting a later node back to an earlier one. Be careful to include exit conditions to prevent infinite loops.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Integration Section -->
+            <section id="ai-integration" class="mb-16 scroll-mt-24">
+                <h2 class="font-display font-bold text-3xl text-dark-purple mb-6 pb-2 border-b-2 border-dark-purple">AI Integration</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Setting Up AI Services</h3>
+                        <p class="text-dark-purple/80 mb-4">AI Architect Centre uses Google's Gemini API for content generation. Follow these steps to set it up:</p>
+                        <ol class="list-decimal pl-6 space-y-3 text-dark-purple/80">
+                            <li>Sign up for a Google AI Studio account at <a href="https://ai.google.dev/" class="text-misty-orchid underline">ai.google.dev</a></li>
+                            <li>Create a new project and obtain an API key</li>
+                            <li>Add the API key to your <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">.env.local</code> file as <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">GEMINI_API_KEY</code></li>
+                            <li>Restart the application to load the new configuration</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Customizing AI Prompts</h3>
+                        <p class="text-dark-purple/80 mb-4">You can customize the AI prompts in the <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">services/geminiService.ts</code> file:</p>
+                        
+                        <div class="bg-canvas-bg border-2 border-dark-purple rounded-xl p-4 mb-4">
+                            <pre class="whitespace-pre-wrap text-sm"><code>// Example of customizing a prompt
+const prompt = `As a marketing specialist for ${companyName}, create a compelling social media post about ${topic}. Tone: ${tone}. Length: ${length}.`;</code></pre>
+                        </div>
+                        
+                        <p class="text-dark-purple/80">Tips for effective prompts:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2 text-dark-purple/80">
+                            <li>Be specific about the desired output format</li>
+                            <li>Include context about your industry or company</li>
+                            <li>Specify the tone and style you want</li>
+                            <li>Define length constraints if needed</li>
+                            <li>Provide examples when possible</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">AI Use Cases</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Content Generation</h4>
+                                <ul class="list-disc pl-5 space-y-1 text-dark-purple/80">
+                                    <li>Email drafts</li>
+                                    <li>Social media posts</li>
+                                    <li>Project reports</li>
+                                    <li>Marketing copy</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Data Analysis</h4>
+                                <ul class="list-disc pl-5 space-y-1 text-dark-purple/80">
+                                    <li>Summarizing documents</li>
+                                    <li>Extracting key information</li>
+                                    <li>Identifying trends</li>
+                                    <li>Generating insights</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Decision Support</h4>
+                                <ul class="list-disc pl-5 space-y-1 text-dark-purple/80">
+                                    <li>Evaluating options</li>
+                                    <li>Providing recommendations</li>
+                                    <li>Assessing risks</li>
+                                    <li>Validating inputs</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Communication</h4>
+                                <ul class="list-disc pl-5 space-y-1 text-dark-purple/80">
+                                    <li>Client responses</li>
+                                    <li>Internal updates</li>
+                                    <li>Meeting summaries</li>
+                                    <li>Follow-up messages</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Troubleshooting Section -->
+            <section id="troubleshooting" class="scroll-mt-24">
+                <h2 class="font-display font-bold text-3xl text-dark-purple mb-6 pb-2 border-b-2 border-dark-purple">Troubleshooting</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Common Issues</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">AI Service Not Responding</h4>
+                                <p class="text-dark-purple/80 mb-2"><strong>Possible causes:</strong></p>
+                                <ul class="list-disc pl-6 space-y-1 text-dark-purple/80">
+                                    <li>Invalid or expired API key</li>
+                                    <li>Network connectivity issues</li>
+                                    <li>Rate limiting from the AI service</li>
+                                </ul>
+                                <p class="text-dark-purple/80 mt-2"><strong>Solutions:</strong></p>
+                                <ul class="list-disc pl-6 space-y-1 text-dark-purple/80">
+                                    <li>Verify your API key in <code class="bg-canvas-bg px-2 py-1 rounded border border-dark-purple font-mono">.env.local</code></li>
+                                    <li>Check your internet connection</li>
+                                    <li>Wait a few minutes if experiencing rate limits</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Workflow Not Executing</h4>
+                                <p class="text-dark-purple/80 mb-2"><strong>Possible causes:</strong></p>
+                                <ul class="list-disc pl-6 space-y-1 text-dark-purple/80">
+                                    <li>Circular dependencies in the workflow</li>
+                                    <li>Missing connections between nodes</li>
+                                    <li>Incorrect node configurations</li>
+                                </ul>
+                                <p class="text-dark-purple/80 mt-2"><strong>Solutions:</strong></p>
+                                <ul class="list-disc pl-6 space-y-1 text-dark-purple/80">
+                                    <li>Review your workflow for circular references</li>
+                                    <li>Ensure all nodes are properly connected</li>
+                                    <li>Double-check node configurations</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Application Performance Issues</h4>
+                                <p class="text-dark-purple/80 mb-2"><strong>Possible causes:</strong></p>
+                                <ul class="list-disc pl-6 space-y-1 text-dark-purple/80">
+                                    <li>Large workflow with many nodes</li>
+                                    <li>Browser memory limitations</li>
+                                    <li>Slow network connection</li>
+                                </ul>
+                                <p class="text-dark-purple/80 mt-2"><strong>Solutions:</strong></p>
+                                <ul class="list-disc pl-6 space-y-1 text-dark-purple/80">
+                                    <li>Break large workflows into smaller ones</li>
+                                    <li>Clear browser cache and restart</li>
+                                    <li>Try a different browser or device</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Best Practices</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">Workflow Design</h4>
+                                <ul class="list-disc pl-5 space-y-2 text-dark-purple/80">
+                                    <li>Keep workflows focused on a single objective</li>
+                                    <li>Use meaningful labels for nodes</li>
+                                    <li>Group related tasks together</li>
+                                    <li>Document complex workflows</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-2 border-dark-purple rounded-xl p-4">
+                                <h4 class="font-bold text-lg text-dark-purple mb-2">AI Integration</h4>
+                                <ul class="list-disc pl-5 space-y-2 text-dark-purple/80">
+                                    <li>Always provide context to the AI</li>
+                                    <li>Validate AI-generated content before use</li>
+                                    <li>Monitor AI usage costs</li>
+                                    <li>Have fallback plans for AI failures</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border-[3px] border-dark-purple rounded-2xl p-6 shadow-cartoon">
+                        <h3 class="font-bold text-xl text-dark-purple mb-3">Getting Help</h3>
+                        <p class="text-dark-purple/80 mb-4">If you're experiencing issues not covered in this manual:</p>
+                        <ul class="list-disc pl-6 space-y-2 text-dark-purple/80">
+                            <li>Check the <a href="https://github.com/me-yeatz/Architect_Centre/issues" class="text-misty-orchid underline">GitHub issues page</a> for known problems</li>
+                            <li>Review the application logs in your browser's developer console</li>
+                            <li>Consult the <a href="https://ai.google.dev/" class="text-misty-orchid underline">Google AI documentation</a> for API-related issues</li>
+                            <li>Reach out to the community for support</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 md:px-12 border-t-[3px] border-dark-purple bg-paper mt-12">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-dark-purple/70">
+                © 2026 AI Architect Centre. User Manual Version 1.0.
+            </p>
+            <div class="mt-4">
+                <a href="index.html" class="inline-block btn-secondary px-6 py-2 rounded-xl font-bold hover:bg-white transition-colors shadow-cartoon mr-4">
+                    Back to Home
+                </a>
+                <a href="../app" class="inline-block btn-primary px-6 py-2 rounded-xl font-bold hover:bg-misty-orchid transition-colors shadow-cartoon">
+                    Launch App
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
