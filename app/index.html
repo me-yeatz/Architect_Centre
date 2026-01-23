@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Architect Centre - Workflow Automation</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="Your AI Studio Manager. Automate client updates, generate copywriting, and manage project tasks directly from your workflow canvas." />
+    <meta name="theme-color" content="#3A2C39" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AI Architect" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'pale-purple': '#F2D9EE',
+              'dark-purple': '#3A2C39',
+              'deep-nebula': '#302335',
+              'misty-orchid': '#98869E',
+              'paper': '#FFFFFF',
+              'canvas-bg': '#F9F4FA', // Very light purple/white
+            },
+            fontFamily: {
+              display: ['Syne', 'sans-serif'],
+              body: ['Space Grotesk', 'sans-serif'],
+              sans: ['Space Grotesk', 'system-ui', 'sans-serif'], // Default to Space Grotesk
+            },
+            boxShadow: {
+              'cartoon': '4px 4px 0px 0px #3A2C39',
+              'cartoon-sm': '2px 2px 0px 0px #3A2C39',
+            },
+            borderRadius: {
+              '4xl': '2rem',
+              '5xl': '2.5rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFFFF;
+        color: #3A2C39;
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      h1, h2, h3, .font-display {
+        font-family: 'Syne', sans-serif;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="./index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>

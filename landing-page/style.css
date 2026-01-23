@@ -1,0 +1,57 @@
+/* Additional styles for the landing page */
+.bg-dark-purple {
+    background-color: #3A2C39;
+}
+
+.text-dark-purple {
+    color: #3A2C39;
+}
+
+.bg-pale-purple {
+    background-color: #F2D9EE;
+}
+
+.text-pale-purple {
+    color: #F2D9EE;
+}
+
+.bg-misty-orchid {
+    background-color: #98869E;
+}
+
+.text-misty-orchid {
+    color: #98869E;
+}
+
+.bg-paper {
+    background-color: #FFFFFF;
+}
+
+.bg-canvas-bg {
+    background-color: #F9F4FA;
+}
+
+.border-dark-purple {
+    border-color: #3A2C39;
+}
+
+.shadow-cartoon {
+    box-shadow: 4px 4px 0px 0px #3A2C39;
+}
+
+.shadow-cartoon-sm {
+    box-shadow: 2px 2px 0px 0px #3A2C39;
+}
+
+.font-display {
+    font-family: 'Syne', sans-serif;
+}
+
+.font-body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.canvas-bg {
+    background-image: radial-gradient(#3A2C39 2px, transparent 2px);
+    background-size: 24px 24px;
+}
