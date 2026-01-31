@@ -5,7 +5,7 @@ import { INITIAL_NODES, INITIAL_EDGES, MOCK_CONTRACT } from './constants';
 import { NodeData, ChatMessage, AutomationLog } from './types';
 import { analyzeClientMessage } from './services/geminiService';
 import { saveContent, saveWhatsAppPreview, markWhatsAppAsSent } from './services/storageService';
-import { Play, Sparkles, Layout, PenTool, Settings, X, Save, ShieldCheck } from 'lucide-react';
+import { Play, Sparkles, Layout, PenTool, Settings, X, Save, ShieldCheck, BookOpen } from 'lucide-react';
 
 const SettingsModal = ({
   isOpen,
@@ -269,6 +269,14 @@ export default function App() {
             className="px-4 py-1.5 text-xs rounded-full bg-misty-orchid text-paper font-bold border-2 border-dark-purple hover:bg-dark-purple transition-colors shadow-cartoon-sm hover:translate-y-[2px] hover:shadow-none">
             Settings
           </button>
+          <a
+            href="/manual.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-4 py-1.5 text-xs rounded-full bg-white text-dark-purple font-bold border-2 border-dark-purple hover:bg-pale-purple transition-colors shadow-cartoon-sm hover:translate-y-[2px] hover:shadow-none">
+            <BookOpen className="w-3.5 h-3.5" />
+            Manual
+          </a>
         </div>
 
         <div className="flex items-center gap-2 text-xs font-bold text-dark-purple">
