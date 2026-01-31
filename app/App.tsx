@@ -201,6 +201,17 @@ export default function App() {
       timestamp: new Date()
     }]);
 
+    // Node 6: Task Checklist generation
+    await simulateNodeExecution('6', 1000);
+    const checklistRes = await analyzeClientMessage('task_checklist', MOCK_CONTRACT);
+    addLog(`Technical task checklist generated`, 'success', '6');
+    setMessages(prev => [...prev, {
+      id: (Date.now() + 4).toString(),
+      sender: 'ai',
+      text: `📋 Architectural Task Checklist:\n\n${checklistRes.generatedText}`,
+      timestamp: new Date()
+    }]);
+
     setIsAiProcessing(false);
   };
 

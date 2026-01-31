@@ -40,6 +40,14 @@ export const INITIAL_NODES: NodeData[] = [
     x: 800,
     y: 250,
     status: 'idle'
+  },
+  {
+    id: '6',
+    type: NodeType.ACTION,
+    label: 'AI: Gen. Task Checklist',
+    x: 100,
+    y: 350,
+    status: 'idle'
   }
 ];
 
