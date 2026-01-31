@@ -44,11 +44,12 @@
 }
 
 .font-display {
-    font-family: 'Syne', sans-serif;
+    font-family: "Aptos", "Century Gothic", "CenturyGothic", "AppleGothic", "Jost", "Montserrat", sans-serif;
+    letter-spacing: -0.02em;
 }
 
 .font-body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Aptos", "Century Gothic", "CenturyGothic", "AppleGothic", "Jost", "Montserrat", sans-serif;
 }
 
 .canvas-bg {
